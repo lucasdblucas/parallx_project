@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Parallax</title>
+        <style type="text/css">
+            body, html {
+                margin: 0;
+                font: 16px "Lato", sans-serif;
+                color: #777;
+                height: 100%; /**Este é o truque do Parallax, ocupar sempre 100% da tela*/
+            }
+            
+            h3 {
+                text-transform: uppercase;
+                color: #111;
+                text-align: center;
+            }
+
+            p {
+                margin-bottom: 20px;
+            }
+            
+            .conteudo {
+                color: #777;
+                background-color: white;
+                text-align: justify;
+                padding: 50px 80px;
+            }
+
+            /**Efeito Parallax*/
+            .caixa1, .caixa2, .caixa3, .caixa4 {
+                position: relative;
+                height: 100%;
+                opacity: 0.7;
+                background-repeat: no-repeat;
+                background-size: cover; /**Cobre toda a área com a imagem*/
+                background-position: center;
+                background-attachment: fixed; /**Truque do parallax. A imagem não acompanha o scroll*/
+            }
+            
+            .caixa1 {
+                background-image: url(imagens/imagem1.jpg);
+            }
+
+            .caixa2 {
+                background-image: url(imagens/imagem2.jpg);
+            }   
+            
+            .caixa3 {
+                background-image: url(imagens/imagem3.jpg);
+            }
+
+            .caixa4 {
+                background-image: url(imagens/imagem4.jpg);
+            }
+
+            .conteudo-titulo {
+                position: absolute;
+                left: 0;
+                top: 45%;
+                width: 100%;
+                text-align: center;
+            }
+
+            .conteudo-titulo span.titulo {
+                color: #fff;
+                background-color: #111;
+                padding: 18px;
+                font-size: 25px;
+                letter-spacing: 5px;
+                text-transform: uppercase;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="caixa1">
+            <div class="conteudo-titulo">
+                <span class="titulo">Passeio de Balões</span>
+            </div>
+        </div>
+        
+        <div class="conteudo">
+            <h3>Parallax</h3>
+            <p>
+                Aliquam eu turpis pellentesque neque iaculis ullamcorper. Pellentesque vel volutpat nunc. Sed nec odio facilisis, facilisis justo vitae, dictum nulla. Aenean ultricies venenatis tellus. Vestibulum eleifend, nisi quis auctor suscipit, quam ipsum lobortis lectus, quis gravida magna dolor dignissim odio. Quisque eleifend finibus augue, at posuere diam consectetur sit amet. Sed eu iaculis felis. Integer a aliquam ipsum. Quisque tortor erat, lobortis ut maximus sed, porttitor at ipsum.
+            </p>
+        </div>
+        
+        <div class="caixa2">
+            <div class="conteudo-titulo">
+                <span class="titulo">Pegando a Estrada</span>
+            </div>
+        </div>
+
+        <div class="conteudo">
+            <h3>Parallax</h3>
+            <p>
+                Aliquam eu turpis pellentesque neque iaculis ullamcorper. Pellentesque vel volutpat nunc. Sed nec odio facilisis, facilisis justo vitae, dictum nulla. Aenean ultricies venenatis tellus. Vestibulum eleifend, nisi quis auctor suscipit, quam ipsum lobortis lectus, quis gravida magna dolor dignissim odio. Quisque eleifend finibus augue, at posuere diam consectetur sit amet. Sed eu iaculis felis. Integer a aliquam ipsum. Quisque tortor erat, lobortis ut maximus sed, porttitor at ipsum.
+            </p>
+        </div>
+
+        <div class="caixa3">
+            <div class="conteudo-titulo">
+                <span class="titulo">Por do Sol</span>
+            </div>
+        </div>
+
+        <div class="conteudo">
+            <h3>Parallax</h3>
+            <p>
+                Aliquam eu turpis pellentesque neque iaculis ullamcorper. Pellentesque vel volutpat nunc. Sed nec odio facilisis, facilisis justo vitae, dictum nulla. Aenean ultricies venenatis tellus. Vestibulum eleifend, nisi quis auctor suscipit, quam ipsum lobortis lectus, quis gravida magna dolor dignissim odio. Quisque eleifend finibus augue, at posuere diam consectetur sit amet. Sed eu iaculis felis. Integer a aliquam ipsum. Quisque tortor erat, lobortis ut maximus sed, porttitor at ipsum.
+            </p>
+        </div>
+
+        <div class="caixa4">
+            <div class="conteudo-titulo">
+                <span class="titulo">Montanhas</span>
+            </div>
+        </div>
+    </body>
+</html>
